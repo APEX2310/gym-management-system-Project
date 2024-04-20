@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pump & Flex Zone</title>
+    <link rel="icon" type="https://cdn-icons-png.flaticon.com/128/7696/7696806.png" href="https://cdn-icons-png.flaticon.com/128/7696/7696806.png">
+    <style>
+        
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+     .bg {
+            background-image: url('https://t3.ftcdn.net/jpg/06/51/49/90/360_F_651499051_tQQimfoC1v8z8cD7m0mQjXElxJrMFppt.jpg');
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            font-size: 25px;
+        }
+     .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        input[type='text'], input[type='password'] {
+            width: 50%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        input[type='text']:focus, input[type='password']:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+     .login-button {
+            background-color: #4bb84f;
+            color: green;
+            padding: 20px 25px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            opacity: 0.9;
+        }
+     .login-button:hover {
+            opacity: 1;
+        }
+     .signup-section {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            padding: 5px;
+            border-radius: 4px;
+      }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="center">
+            <form action="/gym-login" method="post">
+                <label><b>Username:</b></label><br>
+                <input type="text" name="Uname" id="Uname" placeholder="Username"><br><br>
+                <label><b>Password:</b></label><br>
+                <input type="password" name="Pass" id="Pass" placeholder="Password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div class="signup-section">
+            <a href="/signup" style="color: whitesmoke; text-decoration: none;">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>
